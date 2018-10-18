@@ -13,7 +13,7 @@ Table of Contents
   * [Start Logging](#start-logging)
 
 # Start Logging
-To start logging you data all you need to do is run logger.pyw file will actively log you keys. To stop logging you keys you can press the `` ` ``
+To start logging your data, run logger.pyw which will actively log your keys. To stop logging your keys you can press the `` ` `` key.
 
 ## Install Python and Notebooks
 This repository contains Jupyter Notebooks to follow along with the lectures. However, there are several
@@ -24,11 +24,11 @@ Follow the instructions at (https://git-scm.com/book/en/v2/Getting-Started-Insta
 
 ## Install pynput
 Two ways to install pynput
- * open of terminal or cmd and run `pip install pynput`
+ * Open of terminal or cmd and run `pip install pynput`
  * Git clone from the (https://github.com/moses-palmer/pynput) and `run python setup.py install`
  
 ## Run Notebooks
 1. Clone the repository to a desired location (E.g. `git clone https://github.com/Thescuba/data-science.git`)
-2. Open up jupyter labs or jupyter notebook either though anaconda navigator or terminal. 
+2. Open jupyter labs or jupyter notebook either though anaconda navigator or terminal. 
 3. Go to the repository directory
 
