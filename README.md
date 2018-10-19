@@ -13,7 +13,7 @@ Table of Contents
   * [Start Logging](#start-logging)
 
 # Start Logging
-To start logging your data, run logger.pyw which will actively log your keys. To stop logging your keys you can press the `` ` `` key.
+To start logging your data, run logger.pyw which will actively log your keys. To pause/resume logging, press `esc`. To stop logging your keys, press the `end` key.
 
 ## Install Python and Notebooks
 This repository contains Jupyter Notebooks to follow along with the lectures. However, there are several
