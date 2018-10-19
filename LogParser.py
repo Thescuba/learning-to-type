@@ -12,4 +12,4 @@ if file_stream.mode == "r":
     file_stream.close()
 
 for i in contents:
-    print(i)
+    print(i.split(':'))
