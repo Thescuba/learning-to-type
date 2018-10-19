@@ -1,8 +1,13 @@
 from pathlib import Path
 
-# Prompts user to enter a filename
+# Prompt user to enter a filename
 filename = input("Please enter file name (without .txt extension): ")
-
-# Create file directory
 file_path = Path("logs/" + filename + ".txt")
-print(file_path)
+
+# Read file contents
+file_stream = open(file_path, "r")
+
+if file_stream.mode == "r":
+    contents = file_stream.read()
+
+print(contents)
