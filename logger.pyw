@@ -5,7 +5,7 @@ from pathlib import Path
 
 is_logging = True
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
-log_dir = Path("logs/" + current_time + " LOG.txt")
+log_dir = Path("logs/KEYS-" + current_time + ".txt")
 
 print(log_dir)
 try:
