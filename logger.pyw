@@ -3,9 +3,9 @@ import logging
 from datetime import datetime
 
 is_logging = True
-log_dir = "logs\\"
+log_dir = "logs/"
 current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
-log_name = log_dir+current_time + " KEYS.log"
+log_name = log_dir+current_time + " KEYS.txt"
 
 logging.basicConfig(filename=(log_name), level=logging.DEBUG, format='%(asctime)s: %(message)s')
 print("Logging started")
@@ -15,10 +15,10 @@ def on_press(key):
     if is_logging:
         logging.info(str(key))
         print(key)
-    if key == Key.end:
+    if key == Key.esc:
         print('Logging stopped')
         return False
-    if key == Key.esc:
+    if key == Key.end:
         if is_logging:
             print("Paused logging")
         else:
