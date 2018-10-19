@@ -34,4 +34,4 @@ Two ways to install pynput
 3. Go to the repository directory
 
 # Start Logging
-To start logging your data, run logger.pyw which will actively log your keys. To pause/resume logging, press `esc`. To stop logging your keys, press the `end` key.
+To start logging your data, run logger.pyw which will actively log your keys. If you are on mac, you may need to use `sudo python3 logger.pyw` to grant permission to pynput to access your keyboard input. To pause/resume logging, press `esc`. To stop logging your keys, press the `end` key.
