@@ -1,3 +1,8 @@
-filename = input("Please enter file name: ")
+from pathlib import Path
 
-print(filename)
+# Prompts user to enter a filename
+filename = input("Please enter file name (without .txt extension): ")
+
+# Create file directory
+file_path = Path("logs/" + filename + ".txt")
+print(file_path)
