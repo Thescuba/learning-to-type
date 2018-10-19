@@ -9,7 +9,7 @@ Table of Contents
     * [Install Git](#install-git)
     * [Install pynput](#install-pynput)
   * [Getting Started](#getting-started)
-    * [Run Notebooks](#run-notebooks))
+    * [Run Notebooks](#run-notebooks)
   * [Start Logging](#start-logging)
 
 # Start Logging
