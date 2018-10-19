@@ -24,7 +24,7 @@ Follow the instructions at (https://git-scm.com/book/en/v2/Getting-Started-Insta
 
 ## Install pynput
 Two ways to install pynput
- * Open of terminal or cmd and run `pip install pynput`
+ * Open terminal or cmd and run `pip install pynput`
  * Git clone from the (https://github.com/moses-palmer/pynput) and `run python setup.py install`
  
 ## Run Notebooks
