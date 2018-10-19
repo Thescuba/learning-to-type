@@ -12,8 +12,7 @@ Table of Contents
     * [Run Notebooks](#run-notebooks)
   * [Start Logging](#start-logging)
 
-# Start Logging
-To start logging your data, run logger.pyw which will actively log your keys. To pause/resume logging, press `esc`. To stop logging your keys, press the `end` key.
+# Installation
 
 ## Install Python and Notebooks
 This repository contains Jupyter Notebooks to follow along with the lectures. However, there are several
@@ -27,8 +26,12 @@ Two ways to install pynput
  * Open terminal or cmd and run `pip install pynput`
  * Git clone from the (https://github.com/moses-palmer/pynput) and `run python setup.py install`
  
+# Getting Started 
+
 ## Run Notebooks
 1. Clone the repository to a desired location (E.g. `git clone https://github.com/Thescuba/data-science.git`)
 2. Open jupyter labs or jupyter notebook either though anaconda navigator or terminal. 
 3. Go to the repository directory
 
+# Start Logging
+To start logging your data, run logger.pyw which will actively log your keys. To pause/resume logging, press `esc`. To stop logging your keys, press the `end` key.

