@@ -4,7 +4,7 @@ For most of my life I had always looked at the keyboard to type and that had hel
 Table of Contents
 =================
 
-  * [Installation](#notebooks-installation)
+  * [Installation](#installation)
     * [Install Python and Notebooks](#install-python-and-notebooks)
     * [Install Git](#install-git)
     * [Install pynput](#install-pynput)
