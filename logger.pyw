@@ -13,17 +13,16 @@ def on_press(key):
     global is_logging
     if is_logging:
         logging.info(str(key))
-    print(key)
+        print(key)
     if key == Key.end:
-        print('found')
+        print('Logging stopped')
         return False
     if key == Key.esc:
         if is_logging:
             print("Paused logging")
         else:
-            print('Started logging again')
+            print('Resumed logging')
         is_logging = not is_logging
-        print(is_logging)
 
 with Listener(on_press=on_press) as listener:
     listener.join()
