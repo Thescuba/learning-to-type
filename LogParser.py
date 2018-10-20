@@ -9,6 +9,7 @@ relevant_keys = {'Key.space': ' ', 'Key.backspace': 'BS'}
 # Read file contents into contents
 file_stream = open(file_path, "r")
 char_list = []
+filtered_list = []
 
 if file_stream.mode == "r":
     contents = file_stream.readlines()
@@ -25,3 +26,20 @@ print(char_list)
 print(''.join(char_list))
     
 #
+slow = 0
+fast = 0
+size = 0
+for char in char_list:
+    if len(char) == 2:
+        fast += 1
+        slow = max(0, slow-1)
+    if len(char) == 1:
+        if slow <size:
+            filtered_list[slow] = char
+        else:
+            filtered_list.append(char)
+            size += 1
+        slow +=1
+        fast +=1
+
+print(''.join(filtered_list))
