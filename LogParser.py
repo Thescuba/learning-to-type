@@ -27,13 +27,11 @@ for line in contents:
 print(char_list)
 # print(''.join(char_list))
     
-#
+# Filter sentences
 slow = 0
-fast = 0
 size = 0
 for char in char_list:
     if len(char) == 2:
-        fast += 1
         slow = max(0, slow-1)
     if len(char) == 1:
         if slow < size:
@@ -42,6 +40,5 @@ for char in char_list:
             filtered_list.append(char)
             size += 1
         slow +=1
-        fast +=1
 
 print(''.join(filtered_list))
