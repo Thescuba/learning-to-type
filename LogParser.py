@@ -4,7 +4,7 @@ from pathlib import Path
 filename = input("Please enter file name (without .txt extension): ")
 file_path = Path("logs/" + filename + ".txt")
 
-relevant_keys = {'Key.space': ' ', 'Key.backspace': 'BS', 'Key.enter': '\n'}
+relevant_keys = {'Key.space': ' ', 'Key.backspace': 'BS', 'Key.enter': '\n', 'Key.shift': 'SHIFT'}
 
 # Read file into contents
 file_stream = open(file_path, "r")
@@ -24,6 +24,14 @@ for line in contents:
 # print(char_list)
 # print(''.join(char_list))
     
-# Now that we have parsed the file using space and backspace,
-# we can translate the parsed sentence into the actual sentence to see where the error occurred
+# Convert to sentences and parse to literal sentence
+raw_sentences = ''.join(char_list).split('\n')
 
+def parseSentence(sentence):
+    
+    for char in sentence:
+        
+        
+
+for sentence in raw_sentences:
+    parseSentence(sentence)
