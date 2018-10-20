@@ -4,7 +4,7 @@ from pathlib import Path
 filename = input("Please enter file name (without .txt extension): ")
 file_path = Path("logs/" + filename + ".txt")
 
-relevant_keys = {'Key.space': ' ', 'Key.backspace': 'BS', 'Key.enter': '\n', 'Key.shift': 'SHIFT'}
+relevant_keys = {'Key.space': ' ', 'Key.backspace': 'BS', 'Key.enter': '\n'}
 
 # Read file into contents
 file_stream = open(file_path, "r")
@@ -24,7 +24,7 @@ for line in contents:
         char_list.append(key[1])
     elif key in relevant_keys:
         char_list.append(relevant_keys[key])
-# print(char_list)
+print(char_list)
 # print(''.join(char_list))
     
 #
@@ -36,7 +36,7 @@ for char in char_list:
         fast += 1
         slow = max(0, slow-1)
     if len(char) == 1:
-        if slow <size:
+        if slow < size:
             filtered_list[slow] = char
         else:
             filtered_list.append(char)
