@@ -22,6 +22,8 @@ for line in contents:
     elif key in relevant_keys:
         char_list.append(relevant_keys[key])
 # print(char_list)
-print(''.join(char_list))
+# print(''.join(char_list))
     
-#
+# Now that we have parsed the file using space and backspace,
+# we can translate the parsed sentence into the actual sentence to see where the error occurred
+
